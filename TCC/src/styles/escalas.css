@@ -1,0 +1,116 @@
+* {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+body {
+    background-image: url('../assets/IMG_7461.JPG') ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::before{
+     content: "";
+    position: fixed;
+    inset: 0;
+    background: url('../assets/IMG_7461.JPG') center/cover no-repeat;
+    filter: blur(3px) grayscale(60%);
+    z-index: -1;
+}
+
+nav{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1px;
+    background-color: #252525;}
+
+nav .dois{
+
+    color: rgb(0, 0, 0);
+    border-radius: 3%;
+}
+nav .logo{
+    background-color: rgb(175, 174, 173);
+    flex-direction: row;
+    display: flex;
+}
+
+nav ul{
+    gap: 15vh;
+   align-items: flex-end;
+   justify-content: space-between;
+   flex-direction: row;
+   display: flex;
+   list-style: none;
+
+}
+
+nav li a{
+  text-decoration: none;
+  cursor: pointer;
+    font-size: 20px;
+}
+
+.escala {
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.escala th,
+.escala td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  min-width: 100px;
+}
+
+.ministro { 
+    background: #f4a261; 
+}
+
+.back1 { 
+    background: #f28482;
+}
+
+.back2 {
+     background: #e76bf3; 
+}
+
+.violao {
+     background: #9b5de5; 
+     color: white; 
+}
+
+.guitarra {
+    background: #5c7cfa; 
+    color: white; 
+}
+
+.baixo { 
+    background: #ffe066; 
+}
+
+.teclado { background: #2b9348; 
+    color: white; 
+}
+
+.som { 
+    background: #90dbf4; 
+}
+
+
+.escala thead th {
+  background: #eee;
+  font-weight: bold;
+}
+
+.escala{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

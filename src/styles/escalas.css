@@ -1,0 +1,139 @@
+* {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+body {
+    background-image: url('../assets/IMG_7461.JPG') ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::before{
+     content: "";
+    position: fixed;
+    inset: 0;
+    background: url('../assets/IMG_7461.JPG') center/cover no-repeat;
+    filter: blur(3px) grayscale(60%);
+    z-index: -1;
+}
+
+nav{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);}
+
+nav .logo h1 {
+    text-shadow:
+        0 0 3px #fff,
+        0 0 6px #fff;
+}
+
+nav .logo{
+    flex-direction: row;
+    display: flex;
+}
+
+nav ul{
+    gap: 15vh;
+   align-items: flex-end;
+   justify-content: space-between;
+   flex-direction: row;
+   display: flex;
+   list-style: none;
+
+}
+
+nav li a{
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    color: #ffffff;
+}
+
+nav li a:hover::after {
+    width: 100%;
+}
+
+.escala {
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.escala th,
+.escala td {
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: left;
+  min-width: 100px;
+}
+
+.ministro { 
+    background: #f4a261; 
+}
+
+.back1 { 
+    background: #f28482;
+}
+
+.back2 {
+     background: #e76bf3; 
+}
+
+.violao {
+     background: #9b5de5; 
+     color: white; 
+}
+
+.guitarra {
+    background: #5c7cfa; 
+    color: white; 
+}
+
+.baixo { 
+    background: #a1840c; 
+}
+
+.teclado { background: #2b9348; 
+    color: white; 
+}
+
+.som { 
+    background: #55a1ba; 
+}
+
+
+.escala thead th {
+  background: #1b1a1a;
+  font-weight: bold;
+}
+
+.escala{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
